@@ -8,9 +8,6 @@
   background-color: $bgcolor-header;
   top: 100px;
 }
-a {
-  text-decoration: none;
-}
 .container--header-content {
   display: flex;
   align-items: center;
@@ -36,9 +33,6 @@ a {
     padding: 0;
     display: flex;
     gap: 50px;
-    li {
-      list-style: none;
-    }
   }
   &__item {
   }

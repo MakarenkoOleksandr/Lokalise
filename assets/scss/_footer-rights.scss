@@ -1,0 +1,27 @@
+.footer__rights {
+  min-height: 125px;
+  padding: 50px 0 50px;
+  border-top: 1px solid $color-main;
+  font-size: 12px;
+  line-height: 15px;
+  &-flexbox {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+.footer__info {
+  display: flex;
+  gap: 15px;
+  &__logo {
+  }
+  &__description {
+    max-width: 300px;
+  }
+}
+.footer__copyrights {
+  &__copyrights__date {
+  }
+  &__copyrights__name {
+  }
+}

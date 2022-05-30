@@ -22,6 +22,9 @@ $color-main-trial-link: #ffffff;
 
 $bgcolor-main-usage-link: #ff6336;
 $color-main-usage-link: #ffffff;
+
+$bgcolor-footer: #eeeeee;
+
 *,
 ::after,
 ::before {
@@ -54,8 +57,18 @@ html {
 p {
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: $color-main;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 .container {
@@ -72,3 +85,5 @@ h2 {
 @import "section-rating";
 @import "section-usage";
 @import "section-trial";
+@import "footer-navbar";
+@import "footer-rights";
