@@ -1,20 +1,3 @@
-@font-face {
-  font-family: "Graphik LCG";
-  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
-    url("../fonts/GraphikLCG-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Graphik LCG;
-  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
-    url("../fonts/GraphikLCG-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 $color-main: #000000;
 $bgcolor-main: #ffffff;
 
@@ -39,11 +22,26 @@ $color-main-trial-link: #ffffff;
 
 $bgcolor-main-usage-link: #ff6336;
 $color-main-usage-link: #ffffff;
-
 *,
 ::after,
 ::before {
   box-sizing: border-box;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Graphik LCG;
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 html {
   font-family: "Graphik LCG";
