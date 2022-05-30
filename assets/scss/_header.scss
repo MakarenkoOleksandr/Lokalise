@@ -1,13 +1,20 @@
-:root {
-  --bgcolor-orange: #ff6336;
-
-  --color-black: #000000;
-  --color-white: #ffffff;
-
-  --border-black: rgba(0, 0, 0, 0.5);
-}
 .header {
   min-height: 960px;
+}
+.line {
+  position: absolute;
+  min-height: 1px;
+  width: 100%;
+  background-color: $bgcolor-header;
+  top: 100px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container--header-content {
+  display: flex;
+  align-items: center;
 }
 .navbar {
   min-height: 95px;
@@ -15,6 +22,16 @@
   display: flex;
   gap: 50px;
   align-items: center;
+  &-flexbox {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
   &__logo {
     &__image {
     }
@@ -32,7 +49,6 @@
   }
   &__link {
     line-height: 20px;
-    color: var(--color-black);
   }
   &__actions {
     display: flex;
@@ -43,12 +59,12 @@
   &__submit {
     min-width: 120px;
     max-height: 45px;
-    border: 1px solid var(--border-black);
+    border: 1px solid $color-main;
     font-weight: 600;
     font-size: 16px;
     line-height: 45px;
     text-align: center;
-    color: var(--color-black);
+    color: $color-main;
   }
   &__trial {
     min-width: 120px;
@@ -58,31 +74,20 @@
     font-size: 16px;
     line-height: 45px;
     text-align: center;
-    color: var(--color-white);
-    background-color: var(--bgcolor-orange);
+    color: $color-header-white;
+    background-color: $bgcolor-header-link;
   }
 }
-a {
-  text-decoration: none;
-}
-.navbar-flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  justify-content: space-between;
-  margin-bottom: 130px;
-}
 .header-content {
+  min-height: 630px;
   &-flex {
-    margin: 0 auto;
-    padding: 0 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2px;
   }
   &-container {
-    min-width: 550px;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -91,12 +96,10 @@ a {
     font-weight: 600;
     font-size: 65px;
     line-height: 70px;
-    color: var(--color-black);
   }
   &__description {
     font-size: 25px;
     line-height: 35px;
-    color: var(--color-black);
   }
   &__actions {
     display: flex;
@@ -114,8 +117,8 @@ a {
     font-size: 16px;
     line-height: 60px;
     text-align: center;
-    color: var(--color-white);
-    background-color: var(--bgcolor-orange);
+    color: $color-header-white;
+    background-color: $bgcolor-header-link;
   }
   &__demo {
     min-width: 160px;
@@ -124,18 +127,13 @@ a {
     font-size: 16px;
     line-height: 60px;
     text-align: center;
-    color: var(--color-black);
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid $border-color-header;
   }
   &__footer {
     line-height: 25px;
-    color: var(--color-black);
-    margin-bottom: 170px;
   }
   &__image {
     margin: 0;
     padding: 0;
-  }
-  &__img {
   }
 }

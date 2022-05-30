@@ -14,6 +14,15 @@
   font-style: normal;
   font-display: swap;
 }
+
+$color-main: #000000;
+$bgcolor-main: #ffffff;
+
+$color-header-white: #ffffff;
+$bgcolor-header-link: #ff6336;
+$bgcolor-header: #cccccc;
+$border-color-header: rgba(0, 0, 0, 0.5);
+
 *,
 ::after,
 ::before {
@@ -24,7 +33,9 @@ html {
   font-style: normal;
   font-size: 15px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: $bgcolor-main;
+  overflow-x: hidden;
+  color: $color-main;
 }
 p {
   margin: 0;
@@ -34,10 +45,16 @@ h2 {
   margin: 0;
 }
 .container {
-  max-width: 1380px;
+  max-width: 1290px;
   margin: 0 auto;
   padding: 0 20px;
 }
 @import "header";
 @import "section-brands";
 @import "section-job";
+@import "section-options";
+@import "section-upgrade";
+@import "section-comment";
+@import "section-rating";
+@import "section-usage";
+@import "section-trial";
