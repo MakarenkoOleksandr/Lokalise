@@ -1,0 +1,43 @@
+:root {
+  --color-black: #000000;
+  --bgcolor-main: #ff9c7d;
+}
+.main {
+}
+.brands {
+  background-color: var(--bgcolor-main);
+  &__title {
+    max-width: 720px;
+    padding-top: 110px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 70px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    margin-bottom: 105px;
+  }
+  &__logo-1 {
+  }
+  &__logo-2 {
+  }
+  &__logo-3 {
+  }
+  &__logo-4 {
+  }
+  &__logo-5 {
+  }
+  &__logo-6 {
+  }
+}
