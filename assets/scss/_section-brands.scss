@@ -1,12 +1,6 @@
-:root {
-  --color-black: #000000;
-  --bgcolor-main: #ff9c7d;
-}
-.main {
-}
 .brands {
   min-height: 455px;
-  background-color: var(--bgcolor-main);
+  background-color: $bgcolor-main-brands;
   margin-bottom: 90px;
   &__title {
     max-width: 720px;
@@ -16,7 +10,7 @@
     font-size: 50px;
     line-height: 60px;
     text-align: center;
-    color: var(--color-black);
+    color: $color-main;
     margin-bottom: 70px;
   }
   &__list {
@@ -29,17 +23,5 @@
   }
   &__item {
     margin-bottom: 105px;
-  }
-  &__logo-1 {
-  }
-  &__logo-2 {
-  }
-  &__logo-3 {
-  }
-  &__logo-4 {
-  }
-  &__logo-5 {
-  }
-  &__logo-6 {
   }
 }

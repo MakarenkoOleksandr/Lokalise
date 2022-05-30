@@ -1,18 +1,13 @@
-:root {
-  --bgcolor-options: #fff8e4;
-
-  --color-black: #000000;
-}
 .options {
   min-height: 1030px;
   padding: 120px 0 150px;
-  background-color: var(--bgcolor-options);
+  background-color: $bgcolor-main-options;
   &__header {
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
     text-align: center;
-    color: var(--color-black);
+    color: $color-main;
     margin-bottom: 80px;
   }
   &__list {
@@ -36,16 +31,14 @@
     font-size: 25px;
     line-height: 35px;
     text-align: center;
-    color: var(--color-black);
   }
   &__description {
     a {
       text-decoration: underline 1px solid;
-      color: var(--color-black);
+      color: $color-main;
     }
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    color: var(--color-black);
   }
 }
