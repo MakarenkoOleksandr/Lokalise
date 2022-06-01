@@ -1,13 +1,20 @@
-@import "presets/variables";
+@import "../../node_modules/normalize.css/normalize.scss";
+
 @import "presets/skins";
-@import "header";
-@import "section-brands";
-@import "section-job";
-@import "section-options";
-@import "section-upgrade";
-@import "section-comment";
-@import "section-rating";
-@import "section-usage";
-@import "section-trial";
-@import "footer-navbar";
-@import "footer-rights";
+@import "presets/variables";
+
+@import "common/fonts";
+@import "common/typography";
+@import "common/classes";
+
+@import "sections/header";
+// @import "section-brands";
+// @import "section-job";
+// @import "section-options";
+// @import "section-upgrade";
+// @import "section-comment";
+// @import "section-rating";
+// @import "section-usage";
+// @import "section-trial";
+// @import "footer-navbar";
+// @import "footer-rights";
