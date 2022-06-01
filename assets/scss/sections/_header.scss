@@ -1,42 +1,47 @@
-.header {
-  min-height: 960px;
-}
 .line {
   position: absolute;
   min-height: 1px;
-  width: 100%;
+  width: 100vw;
   background-color: $bgcolor-header;
-  top: 100px;
+  top: 95px;
 }
-.container--header-content {
+.header {
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  &-menu {
+    min-height: 95px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    right: 20px;
+    &__actions {
+      display: flex;
+      gap: 10px;
+    }
+    &-submit {
+      min-width: 120px;
+      max-height: 45px;
+    }
+    &-trial {
+      min-width: 120px;
+      max-height: 45px;
+    }
+  }
+  &-navbar {
+    flex-grow: 1;
+  }
 }
 .navbar {
-  min-height: 95px;
-  padding: 1em 0 1em;
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  &-flexbox {
-    max-width: 1340px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: space-between;
-    margin-bottom: 100px;
-  }
   &__list {
-    margin: 0;
-    padding: 0;
+    padding: 1em 0 1em;
     display: flex;
     gap: 50px;
-  }
-  &__link {
-    line-height: 20px;
-    color: $color-main;
+    align-items: center;
   }
   &__actions {
     display: flex;
@@ -44,50 +49,85 @@
     align-items: center;
     gap: 10px;
   }
-  &__submit {
-    min-width: 120px;
-    max-height: 45px;
-    border: 1px solid $color-main;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 45px;
-    text-align: center;
-    color: $color-main;
-  }
-  &__trial {
-    min-width: 120px;
-    max-height: 45px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 45px;
-    text-align: center;
-    color: $color-header-white;
-    background-color: $bgcolor-header-link;
-  }
 }
 .header-content {
-  min-height: 630px;
-  &-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
+  display: flex;
+  @include xl-min {
+    flex-direction: row;
   }
+  @include xl-max {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-container {
     max-width: 550px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+
+    @include xl-min {
+      gap: 50px;
+    }
+    @include xl-lg {
+      gap: 40px;
+      align-items: center;
+    }
+
+    @include lg-sm {
+      gap: 30px;
+      align-items: center;
+    }
+
+    @include sm-max {
+      gap: 25px;
+      align-items: center;
+    }
   }
   &__title {
     font-weight: 600;
-    font-size: 65px;
     line-height: 70px;
+
+    @include xxl-min {
+      font-size: 65px;
+    }
+    @include xxl-xl {
+      font-size: 55px;
+    }
+    @include xl-lg {
+      text-align: center;
+      font-size: 45px;
+    }
+    @include lg-sm {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @include sm-max {
+      text-align: center;
+      font-size: 35px;
+    }
   }
   &__description {
-    font-size: 25px;
     line-height: 35px;
+
+    @include xxl-min {
+      font-size: 25px;
+    }
+    @include xxl-xl {
+      font-size: 20px;
+    }
+    @include xl-lg {
+      text-align: center;
+      font-size: 15px;
+    }
+    @include lg-sm {
+      text-align: center;
+      font-size: 15px;
+    }
+    @include sm-max {
+      text-align: center;
+      font-size: 10px;
+    }
   }
   &__actions {
     display: flex;
@@ -101,28 +141,25 @@
   &__trial {
     min-width: 160px;
     max-height: 60px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 60px;
-    text-align: center;
-    color: $color-header-white;
-    background-color: $bgcolor-header-link;
   }
   &__demo {
     min-width: 160px;
     max-height: 60px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 60px;
-    text-align: center;
-    border: 1px solid $border-color-header;
-    color: $color-main;
   }
   &__footer {
     line-height: 25px;
   }
   &__image {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    @include xl-min {
+      width: 100%;
+    }
+    @include xl-max {
+      width: 50%;
+      align-self: center;
+    }
   }
 }

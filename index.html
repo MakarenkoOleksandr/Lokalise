@@ -6,19 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main</title>
-  <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="line"></div>
-    <div class="navbar-flexbox">
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <img class="logo__image" src="assets/img/navbar-logo.svg" alt="logo">
-        </div>
+  <div class="line"></div>
+  <header class="header container">
+    <div class="header-menu">
+      <div class="header-logo">
+        <img class="logo__image" src="assets/img/navbar-logo.svg" alt="logo">
+      </div>
+      <nav class="header-navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
             <a class="navbar__link" href="">Product</a>
@@ -37,28 +36,26 @@
           </li>
         </ul>
       </nav>
-      <div class="navbar__actions">
-        <a class="navbar__submit" href="">Log in</a>
-        <a class="navbar__trial" href="">Try it free</a>
+      <div class="header-menu__actions">
+        <button class="btn-light header-menu-submit" type="button">Log in</button>
+        <button class="btn-coloured header-menu-trial" type="button">Try it free</button>
       </div>
     </div>
 
 
     <section class="header-content">
-      <div class="container container--header-content">
-        <div class="header-content-container">
-          <h1 class="header-content__title">Accelerate localization from code to delivery</h1>
-          <p class="header-content__description">A localization and translation management platform for agile teams.
-            Embrace automation, workflow transparency, and fast project delivery.</p>
-          <div class="header-content__actions">
-            <a class="header-content__trial" href="">Try it free</a>
-            <a class="header-content__demo" href="">Book a demo</a>
-          </div>
-          <p class="header-content__footer">Try all features for 14 days · No credit card required</p>
+      <div class="header-content-container">
+        <h1 class="header-content__title">Accelerate localization from code to delivery</h1>
+        <p class="header-content__description">A localization and translation management platform for agile teams.
+          Embrace automation, workflow transparency, and fast project delivery.</p>
+        <div class="header-content__actions">
+          <button class="btn-light header-content__trial" type="button">Try it free</button>
+          <button class="btn-coloured header-content__demo" type="button">Book a demo</button>
         </div>
-        <div class="header-content__image">
-          <img class="header-content__img" src="assets/img/header-content-image.png" alt="img">
-        </div>
+        <p class="header-content__footer">Try all features for 14 days · No credit card required</p>
+      </div>
+      <div class="header-content__image">
+        <img class="header-content__img" src="assets/img/header-content-image.png" alt="img">
       </div>
     </section>
   </header>
