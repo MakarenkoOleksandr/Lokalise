@@ -1,0 +1,52 @@
+.line {
+  position: absolute;
+  min-height: 1px;
+  width: 100vw;
+  background-color: $bgcolor-header;
+  top: 95px;
+}
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &-menu {
+    min-height: 95px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    right: 20px;
+    &__actions {
+      display: flex;
+      gap: 10px;
+    }
+    &-submit {
+      min-width: 120px;
+      max-height: 45px;
+    }
+    &-trial {
+      min-width: 120px;
+      max-height: 45px;
+    }
+  }
+  &-navbar {
+    flex-grow: 1;
+  }
+}
+.navbar {
+  &__list {
+    padding: 1em 0 1em;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+}

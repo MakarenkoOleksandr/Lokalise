@@ -1,55 +1,3 @@
-.line {
-  position: absolute;
-  min-height: 1px;
-  width: 100vw;
-  background-color: $bgcolor-header;
-  top: 95px;
-}
-.header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  &-menu {
-    min-height: 95px;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    right: 20px;
-    &__actions {
-      display: flex;
-      gap: 10px;
-    }
-    &-submit {
-      min-width: 120px;
-      max-height: 45px;
-    }
-    &-trial {
-      min-width: 120px;
-      max-height: 45px;
-    }
-  }
-  &-navbar {
-    flex-grow: 1;
-  }
-}
-.navbar {
-  &__list {
-    padding: 1em 0 1em;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-  }
-  &__actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-}
 .header-content {
   display: flex;
   @include xl-min {
@@ -73,7 +21,12 @@
       align-items: center;
     }
 
-    @include lg-sm {
+    @include lg-md {
+      gap: 30px;
+      align-items: center;
+    }
+
+    @include md-sm {
       gap: 30px;
       align-items: center;
     }
@@ -87,21 +40,21 @@
     font-weight: 600;
     line-height: 70px;
 
-    @include xxl-min {
+    @include xl-min {
       font-size: 65px;
-    }
-    @include xxl-xl {
-      font-size: 55px;
     }
     @include xl-lg {
       text-align: center;
+      font-size: 60px;
+    }
+    @include lg-md {
+      text-align: center;
+      font-size: 55px;
+    }
+    @include md-sm {
+      text-align: center;
       font-size: 45px;
     }
-    @include lg-sm {
-      text-align: center;
-      font-size: 40px;
-    }
-
     @include sm-max {
       text-align: center;
       font-size: 35px;
@@ -110,17 +63,14 @@
   &__description {
     line-height: 35px;
 
-    @include xxl-min {
+    @include xl-min {
       font-size: 25px;
-    }
-    @include xxl-xl {
-      font-size: 20px;
     }
     @include xl-lg {
       text-align: center;
       font-size: 15px;
     }
-    @include lg-sm {
+    @include lg-md {
       text-align: center;
       font-size: 15px;
     }
@@ -131,7 +81,6 @@
   }
   &__actions {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     align-content: center;

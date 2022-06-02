@@ -8,8 +8,9 @@
 @import "common/typography";
 @import "common/classes";
 
-@import "sections/header";
-// @import "section-brands";
+@import "sections/header/header-menu";
+@import "sections/header/header-content";
+@import "sections/main/section-brands";
 // @import "section-job";
 // @import "section-options";
 // @import "section-upgrade";
