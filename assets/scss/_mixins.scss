@@ -33,6 +33,11 @@
     @content;
   }
 }
+@mixin xl-sm {
+  @media (min-width: $sm) and (max-width: 1199.98px) {
+    @content;
+  }
+}
 
 @mixin lg-min {
   @media (min-width: $lg) {

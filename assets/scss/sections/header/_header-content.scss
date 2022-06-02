@@ -66,17 +66,13 @@
     @include xl-min {
       font-size: 25px;
     }
-    @include xl-lg {
+    @include xl-sm {
       text-align: center;
-      font-size: 15px;
-    }
-    @include lg-md {
-      text-align: center;
-      font-size: 15px;
+      font-size: 25px;
     }
     @include sm-max {
       text-align: center;
-      font-size: 10px;
+      font-size: 25px;
     }
   }
   &__actions {
