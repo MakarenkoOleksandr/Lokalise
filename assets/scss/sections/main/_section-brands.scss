@@ -1,3 +1,6 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .brands {
   min-height: 455px;
   background-color: $bgcolor-main-brands;
@@ -8,58 +11,36 @@
     font-weight: 600;
     text-align: center;
     color: $color-main;
-
-    @include md-min {
-      font-size: 50px;
-      line-height: 60px;
-    }
-    @include sm-min {
-      padding-top: 110px;
-      margin-bottom: 70px;
-      font-size: 40px;
-      line-height: 50px;
-    }
-    @include sm-max {
-      padding-top: 60px;
-      margin-bottom: 70px;
-      font-size: 30px;
-      line-height: 40px;
-    }
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 110px;
+    margin-bottom: 70px;
   }
   &__list {
     margin: 0;
     padding: 0;
-    @include xxl-min {
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      column-gap: 100px;
-    }
-    @include xxl-sm {
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      grid-template: 1fr 1fr / 1fr 1fr 1fr;
-      row-gap: 20px;
-    }
-    @include sm-max {
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      grid-template: 1fr 1fr 1fr/ 1fr 1fr;
-      row-gap: 20px;
-    }
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    
+    // @include xxl-sm {
+    //   display: grid;
+    //   justify-items: center;
+    //   align-items: center;
+    //   grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    //   row-gap: 20px;
+    // }
+    // @include sm-max {
+    //   display: grid;
+    //   justify-items: center;
+    //   align-items: center;
+    //   grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    //   row-gap: 20px;
+    // }
   }
   &__logo {
-    @include xxl-min {
-      width: 100%;
-    }
-    @include sm-min {
-      width: 70%;
-    }
-    @include sm-max {
-      width: 70%;
-    }
+    width: 100%;
   }
 }

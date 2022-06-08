@@ -1,79 +1,24 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-content {
   display: flex;
-  @include xl-min {
-    flex-direction: row;
-  }
-  @include xl-max {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: row;
 
   &-container {
     max-width: 550px;
     display: flex;
     flex-direction: column;
-
-    @include xl-min {
-      gap: 50px;
-    }
-    @include xl-lg {
-      gap: 40px;
-      align-items: center;
-    }
-
-    @include lg-md {
-      gap: 30px;
-      align-items: center;
-    }
-
-    @include md-sm {
-      gap: 30px;
-      align-items: center;
-    }
-
-    @include sm-max {
-      gap: 25px;
-      align-items: center;
-    }
+    gap: 50px;
   }
   &__title {
     font-weight: 600;
     line-height: 70px;
-
-    @include xl-min {
-      font-size: 65px;
-    }
-    @include xl-lg {
-      text-align: center;
-      font-size: 60px;
-    }
-    @include lg-md {
-      text-align: center;
-      font-size: 55px;
-    }
-    @include md-sm {
-      text-align: center;
-      font-size: 45px;
-    }
-    @include sm-max {
-      text-align: center;
-      font-size: 35px;
-    }
+    font-size: 65px;
   }
   &__description {
     line-height: 35px;
-
-    @include xl-min {
-      font-size: 25px;
-    }
-    @include xl-sm {
-      text-align: center;
-      font-size: 25px;
-    }
-    @include sm-max {
-      text-align: center;
-      font-size: 25px;
-    }
+    font-size: 25px;
   }
   &__actions {
     display: flex;
@@ -99,12 +44,6 @@
     justify-content: center;
   }
   &__img {
-    @include xl-min {
-      width: 100%;
-    }
-    @include xl-max {
-      width: 50%;
-      align-self: center;
-    }
+    width: 100%;
   }
 }
