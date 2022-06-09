@@ -5,7 +5,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-bottom: 180px;
   &-menu {
     position: relative;
     min-height: 95px;
@@ -24,16 +23,7 @@
       gap: 50px;
       align-items: center;
     }
-    @include md-sm {
-      padding-top: $gap;
-      padding-bottom: $gap;
-      display: grid;
-      grid-template-areas: "logo" "acn" "nav";
-      grid-template-rows: 1fr 1fr 1fr;
-      justify-items: center;
-      row-gap: $gap;
-    }
-    @include sm {
+    @include md-xs {
       padding-top: $gap;
       padding-bottom: $gap;
       display: grid;
@@ -47,12 +37,7 @@
         min-width: 120px;
         max-height: 45px;
       }
-      @include ul-sm {
-        font-size: 14px;
-        min-width: 100px;
-        max-height: 35px;
-      }
-      @include sm {
+      @include ul-xs {
         font-size: 14px;
         min-width: 100px;
         max-height: 25px;
@@ -63,12 +48,7 @@
         min-width: 120px;
         max-height: 45px;
       }
-      @include ul-sm {
-        font-size: 14px;
-        min-width: 100px;
-        max-height: 35px;
-      }
-      @include sm {
+      @include ul-xs {
         font-size: 14px;
         min-width: 100px;
         max-height: 25px;

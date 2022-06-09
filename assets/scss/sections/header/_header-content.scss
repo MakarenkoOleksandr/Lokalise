@@ -4,18 +4,12 @@
 .header-content {
   display: flex;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   @include lg-min {
-    padding-top: 120px;
     flex-direction: row;
   }
-  @include lg-sm {
-    padding-top: 80px;
-    flex-direction: column;
-    align-items: center;
-    row-gap: $gap;
-  }
-  @include sm {
-    padding-top: 80px;
+  @include lg-xs {
     flex-direction: column;
     align-items: center;
     row-gap: $gap;
@@ -26,15 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    @include lg-md {
-      flex-direction: column;
-      align-items: center;
-    }
-    @include md-sm {
-      flex-direction: column;
-      align-items: center;
-    }
-    @include sm {
+    @include lg-xs {
       flex-direction: column;
       align-items: center;
     }
@@ -44,16 +30,14 @@
     justify-content: center;
     flex-grow: 1;
     flex-basis: 200px;
+    align-items: baseline;
   }
   &__img {
     @include lg-min {
       width: 100%;
     }
-    @include lg-sm {
+    @include lg-xs {
       width: 70%;
-    }
-    @include sm {
-      height: 35%;
     }
   }
   &__title {
@@ -71,7 +55,7 @@
     }
     @include sm {
       text-align: center;
-      font-size: 35px;
+      font-size: 40px;
     }
   }
   &__description {
