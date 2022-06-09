@@ -1,44 +1,79 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .options {
-  min-height: 1030px;
-  padding: 120px 0 150px;
   background-color: $bgcolor-main-options;
+  @include xl-min {
+    min-height: 1030px;
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
+  @include xl-xs {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   &__header {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 60px;
     text-align: center;
-    color: $color-main;
-    margin-bottom: 80px;
+    line-height: 1.2;
+    @include lg-min {
+      margin-bottom: 80px;
+    }
+    @include lg-xs {
+      margin-bottom: 40px;
+    }
   }
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 75px;
-    column-gap: 125px;
+    column-gap: $gap;
     justify-items: center;
+
+    @include lg-min {
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 75px;
+    }
+    @include lg-sm {
+      grid-template-columns: 1fr 1fr;
+      row-gap: $gap-md;
+    }
+    @include sm-xs {
+      grid-template-columns: 1fr;
+      row-gap: $gap-md;
+    }
   }
   &__item {
     max-width: 325px;
+    gap: $gap;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+  }
+  &__picture {
+    display: flex;
     justify-content: center;
   }
   &__image {
+    width: 100%;
   }
   &__title {
     font-weight: 600;
-    font-size: 25px;
-    line-height: 35px;
     text-align: center;
+    @include lg-min {
+      font-size: 25px;
+    }
+    @include lg-xs {
+      font-size: 20px;
+    }
   }
   &__description {
     a {
       text-decoration: underline 1px solid;
       color: $color-main;
     }
-    font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
     text-align: center;
+    @include lg-min {
+      font-size: 18px;
+    }
   }
 }

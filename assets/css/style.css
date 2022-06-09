@@ -756,6 +756,61 @@ h2 {
   display: flex;
 }
 
+.options {
+  background-color: #fff8e4;
+}
+.options__header {
+  text-align: center;
+  line-height: 1.2;
+}
+.options__list {
+  display: grid;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  justify-items: center;
+}
+.options__item {
+  max-width: 325px;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.options__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.options__image {
+  width: 100%;
+}
+.options__title {
+  font-weight: 600;
+  text-align: center;
+}
+.options__description {
+  line-height: 1.39;
+  text-align: center;
+}
+.options__description a {
+  -webkit-text-decoration: underline 1px solid;
+          text-decoration: underline 1px solid;
+  color: #000000;
+}
 @media (min-width: 768px) {
   .header-menu {
     display: -webkit-box;
@@ -767,7 +822,6 @@ h2 {
             align-items: center;
   }
 }
-
 @media (min-width: 992px) {
   .navbar-hamburger {
     display: none;
@@ -832,8 +886,20 @@ h2 {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  .options__header {
+    margin-bottom: 80px;
+  }
+  .options__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 75px;
+  }
+  .options__title {
+    font-size: 25px;
+  }
+  .options__description {
+    font-size: 18px;
+  }
 }
-
 @media (min-width: 1200px) {
   h2 {
     font-size: 50px;
@@ -856,8 +922,12 @@ h2 {
   .job__work {
     gap: 140px;
   }
+  .options {
+    min-height: 1030px;
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
 }
-
 @media (min-width: 1380px) {
   .header-menu-submit {
     min-width: 120px;
@@ -881,7 +951,6 @@ h2 {
     max-height: 45px;
   }
 }
-
 @media (max-width: 1379.8px) and (min-width: 320px) {
   .header-menu-submit {
     font-size: 14px;
@@ -894,7 +963,6 @@ h2 {
     max-height: 25px;
   }
 }
-
 @media (max-width: 1379.8px) and (min-width: 576px) {
   .header-content__trial {
     font-size: 14px;
@@ -916,7 +984,6 @@ h2 {
     row-gap: 20px;
   }
 }
-
 @media (max-width: 1379.8px) and (min-width: 992px) {
   .navbar__list {
     -webkit-column-gap: 30px;
@@ -924,7 +991,6 @@ h2 {
             column-gap: 30px;
   }
 }
-
 @media (max-width: 1199.8px) and (min-width: 320px) {
   .job__control {
     gap: 0;
@@ -938,8 +1004,11 @@ h2 {
   .job__work {
     gap: 0;
   }
+  .options {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
-
 @media (max-width: 1199.8px) and (min-width: 992px) {
   h2 {
     font-size: 40px;
@@ -954,7 +1023,6 @@ h2 {
     width: 90%;
   }
 }
-
 @media (max-width: 991.8px) {
   .header-logo {
     -webkit-box-flex: 1;
@@ -1031,7 +1099,6 @@ h2 {
     text-align: center;
   }
 }
-
 @media (max-width: 991.8px) and (min-width: 320px) {
   h2 {
     font-size: 35px;
@@ -1073,7 +1140,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 20px;
+    row-gap: 30px;
   }
   .job__quality {
     -webkit-box-orient: vertical;
@@ -1105,8 +1172,13 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .options__header {
+    margin-bottom: 40px;
+  }
+  .options__title {
+    font-size: 20px;
+  }
 }
-
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__title {
     text-align: center;
@@ -1120,8 +1192,11 @@ h2 {
   .item__image {
     width: 85%;
   }
+  .options__list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
 }
-
 @media (max-width: 767.8px) and (min-width: 320px) {
   .header-menu {
     padding-top: 20px;
@@ -1133,7 +1208,6 @@ h2 {
     row-gap: 20px;
   }
 }
-
 @media (max-width: 575.8px) {
   .header-content__title {
     text-align: center;
@@ -1169,9 +1243,12 @@ h2 {
     row-gap: 20px;
   }
 }
-
 @media (max-width: 575.8px) and (min-width: 320px) {
   .item__image {
     width: 80%;
+  }
+  .options__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
