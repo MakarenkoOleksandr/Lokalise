@@ -1,39 +1,77 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .upgrade {
-  min-height: 1065px;
-  padding: 155px 0 190px;
-  &__title {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 60px;
+  @include xl-min {
+    min-height: 1065px;
+    padding-top: 155px;
+    padding-bottom: 190px;
+  }
+  @include xl-xs {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  &__header {
+    text-align: center;
     margin-bottom: 75px;
+    @include sm-xs {
+      font-size: 25px;
+    }
   }
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: $gap-md;
     align-items: baseline;
+    @include lg-min {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include lg-xs {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
   &__item {
     max-width: 410px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    @include lg-min {
+      gap: $gap-md;
+    }
+    @include lg-xs {
+      gap: $gap-sm;
+    }
+    @include lg {
+      align-items: center;
+    }
   }
-  &__item__title {
+  &__picture {
+    margin-bottom: 15px;
+  }
+  &__title {
     font-weight: 600;
-    font-size: 30px;
     line-height: 40px;
+    @include lg-min {
+      font-size: 30px;
+    }
+    @include lg-sm {
+      font-size: 25px;
+    }
   }
-  &__item__description {
+  &__description {
     a {
       text-decoration: underline 1px solid;
       color: $color-main;
     }
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 25px;
+    line-height: 1.5;
+    @include lg-min {
+      font-size: 20px;
+    }
+    @include lg {
+      text-align: center;
+    }
   }
-  &__footer__link {
+  &__link {
     font-size: 20px;
     line-height: 30px;
     text-decoration: underline 1px solid;
