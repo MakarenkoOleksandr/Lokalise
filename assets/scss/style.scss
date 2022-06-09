@@ -1,4 +1,3 @@
-
 @use "../../node_modules/normalize.css/normalize";
 
 @use "presets/skins";
@@ -10,8 +9,8 @@
 @use "common/classes";
 
 @use "sections/header/header-menu";
-// @use "sections/header/header-content";
-// @use "sections/main/section-brands";
+@use "sections/header/header-content";
+@use "sections/main/section-brands";
 // @import "section-job";
 // @import "section-options";
 // @import "section-upgrade";

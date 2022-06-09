@@ -1,9 +1,10 @@
 @use "../presets" as *;
 
 .container {
-  max-width: $xxl;
+  max-width: $ul;
   margin: 0 auto;
-  padding: 0 $gap;
+  padding-left: $gap;
+  padding-right: $gap;
 }
 
 .btn-light {
