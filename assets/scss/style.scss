@@ -10,11 +10,11 @@
 
 @use "sections/header/header-menu";
 @use "sections/header/header-content";
-@use "sections/main/section-brands";
-@use "sections/main/section-job";
-@use "sections/main/section-options";
-@use "sections/main/section-upgrade";
-// @import "section-comment";
+@use "sections/main/brands";
+@use "sections/main/job";
+@use "sections/main/options";
+@use "sections/main/upgrade";
+@use "sections/main/comment";
 // @import "section-rating";
 // @import "section-usage";
 // @import "section-trial";
