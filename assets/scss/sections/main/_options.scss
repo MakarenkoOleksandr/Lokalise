@@ -8,7 +8,7 @@
     padding-top: 120px;
     padding-bottom: 150px;
   }
-  @include xl-xs {
+  @include xl {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -18,7 +18,7 @@
     @include lg-min {
       margin-bottom: 80px;
     }
-    @include lg-xs {
+    @include lg {
       margin-bottom: 40px;
     }
   }
@@ -35,7 +35,7 @@
       grid-template-columns: 1fr 1fr;
       row-gap: $gap-md;
     }
-    @include sm-xs {
+    @include sm {
       grid-template-columns: 1fr;
       row-gap: $gap-md;
     }
@@ -61,7 +61,7 @@
     @include lg-min {
       font-size: 25px;
     }
-    @include lg-xs {
+    @include lg {
       font-size: 20px;
     }
   }

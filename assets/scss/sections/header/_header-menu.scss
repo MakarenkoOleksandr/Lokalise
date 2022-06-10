@@ -23,7 +23,7 @@
       gap: 50px;
       align-items: center;
     }
-    @include md-xs {
+    @include md {
       padding-top: $gap;
       padding-bottom: $gap;
       display: grid;
@@ -37,7 +37,7 @@
         min-width: 120px;
         max-height: 45px;
       }
-      @include ul-xs {
+      @include ul {
         font-size: 14px;
         min-width: 100px;
         max-height: 25px;
@@ -48,7 +48,7 @@
         min-width: 120px;
         max-height: 45px;
       }
-      @include ul-xs {
+      @include ul {
         font-size: 14px;
         min-width: 100px;
         max-height: 25px;

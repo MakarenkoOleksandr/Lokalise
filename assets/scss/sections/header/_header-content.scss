@@ -9,7 +9,7 @@
   @include lg-min {
     flex-direction: row;
   }
-  @include lg-xs {
+  @include lg {
     flex-direction: column;
     align-items: center;
     row-gap: $gap;
@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    @include lg-xs {
+    @include lg {
       flex-direction: column;
       align-items: center;
     }
@@ -36,7 +36,7 @@
     @include lg-min {
       width: 100%;
     }
-    @include lg-xs {
+    @include lg {
       width: 70%;
     }
   }

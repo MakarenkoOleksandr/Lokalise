@@ -7,14 +7,14 @@
     padding-top: 155px;
     padding-bottom: 190px;
   }
-  @include xl-xs {
+  @include xl {
     margin-top: 80px;
     margin-bottom: 80px;
   }
   &__header {
     text-align: center;
     margin-bottom: 75px;
-    @include sm-xs {
+    @include sm {
       font-size: 25px;
     }
   }
@@ -25,7 +25,7 @@
     @include lg-min {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    @include lg-xs {
+    @include lg {
       grid-template-columns: 1fr;
       justify-items: center;
     }
@@ -38,10 +38,8 @@
     @include lg-min {
       gap: $gap-md;
     }
-    @include lg-xs {
-      gap: $gap-sm;
-    }
     @include lg {
+      gap: $gap-sm;
       align-items: center;
     }
   }
@@ -54,7 +52,7 @@
     @include lg-min {
       font-size: 30px;
     }
-    @include lg-sm {
+    @include lg {
       font-size: 25px;
     }
   }
