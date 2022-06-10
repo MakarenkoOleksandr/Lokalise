@@ -1,7 +1,7 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.options {
+.opportunity {
   background-color: $bgcolor-main-options;
   @include xl-min {
     min-height: 1030px;

@@ -1,0 +1,67 @@
+@use "../presets" as *;
+@use "mixins" as *;
+
+%job-article {
+    display: flex;
+    align-items: center;
+    @include xl-min {
+        column-gap: 140px;
+    }
+    @include xl {
+        column-gap: $gap;
+    }
+    @include sm {
+        row-gap: $gap-lg;
+    }
+}
+
+%job-article-content {
+    flex-grow: 1;
+    flex-basis: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+%job-article-title {
+    @include sm {
+        text-align: center;
+    }
+}
+
+%job-article-description {
+    a {
+        text-decoration: underline 1px solid;
+        color: $color-main;
+    }
+    line-height: 1.5;
+    @include md-min {
+        font-size: 20px;
+    }
+    @include sm {
+        text-align: center;
+    }
+}
+%job-article-action {
+    @include sm {
+        text-align: center;
+    }
+}
+
+%job-article-link {
+    font-weight: 600;
+    font-size: 20px;
+}
+%job-article-picture {
+    flex-grow: 1;
+    flex-basis: 150px;
+    display: flex;
+}
+%job-article-image {
+    @include sm-min {
+        width: 100%;
+    }
+    @include sm {
+        width: 75%;
+    }
+}
