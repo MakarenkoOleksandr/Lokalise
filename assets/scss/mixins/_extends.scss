@@ -30,8 +30,8 @@
 }
 
 %job-article-description {
-    a {
-        text-decoration: underline 1px solid;
+    span {
+        border-bottom: solid 1px $color-main;
         color: $color-main;
     }
     line-height: 1.5;

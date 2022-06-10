@@ -3,7 +3,12 @@
 
 .job {
   padding-top: 90px;
-  padding-bottom: 150px;
+  @include sm-min {
+    padding-bottom: 150px;
+  }
+  @include sm {
+    padding-bottom: 90px;
+  }
 }
 
 .job-control {

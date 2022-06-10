@@ -375,9 +375,8 @@ template {
 .job-control__description, .job-time__description, .job-quality__description, .job-work__description {
   line-height: 1.5;
 }
-.job-control__description a, .job-time__description a, .job-quality__description a, .job-work__description a {
-  -webkit-text-decoration: underline 1px solid;
-          text-decoration: underline 1px solid;
+.job-control__description span, .job-time__description span, .job-quality__description span, .job-work__description span {
+  border-bottom: solid 1px #000000;
   color: #000000;
 }
 
@@ -717,7 +716,6 @@ h2 {
 
 .job {
   padding-top: 90px;
-  padding-bottom: 150px;
 }
 .opportunity {
   background-color: #fff8e4;
@@ -822,6 +820,9 @@ h2 {
 @media (min-width: 576px) {
   .job-control__image, .job-time__image, .job-quality__image, .job-work__image {
     width: 100%;
+  }
+  .job {
+    padding-bottom: 150px;
   }
   .job-control {
     padding-bottom: 250px;
@@ -1216,6 +1217,9 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 20px;
+  }
+  .job {
+    padding-bottom: 90px;
   }
   .job-control {
     padding-bottom: 40px;
