@@ -1,36 +1,71 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .usage {
-  min-height: 1100px;
-  padding: 165px 0 160px;
-  &-flexbox {
+  @include lg-min {
+    padding-top: 165px;
+    padding-bottom: 160px;
+  }
+  @include lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__title {
-    max-width: 800px;
-    font-weight: 600;
-    font-size: 65px;
-    line-height: 75px;
+    line-height: 1.15;
     text-align: center;
+    padding-bottom: $gap;
+    @include xl-min {
+      padding-left: 250px;
+      padding-right: 250px;
+      font-size: 65px;
+    }
+    @include xl-lg {
+      font-size: 55px;
+    }
+    @include lg-sm {
+      font-size: 45px;
+    }
+    @include sm {
+      font-size: 35px;
+    }
   }
   &__description {
-    max-width: 550px;
-    font-size: 25px;
-    line-height: 30px;
+    line-height: 1.2;
     text-align: center;
+    @include xl-min {
+      padding-left: 400px;
+      padding-right: 400px;
+    }
+    @include lg-min {
+      font-size: 25px;
+    }
+    @include lg {
+      font-size: 20px;
+    }
   }
   &__image {
     padding: 25px 0 25px;
+    width: 100%;
   }
-  &__link {
-    display: flex;
-    justify-content: center;
-    min-width: 200px;
-    max-height: 60px;
-    background-color: $bgcolor-main-usage-link;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 60px;
-    color: $color-main-usage-link;
+  &__button {
+    @include lg-min {
+      min-width: 200px;
+      max-height: 60px;
+    }
+    @include lg-sm {
+      font-size: 14px;
+      min-width: 150px;
+      max-height: 40px;
+    }
+    @include sm {
+      font-size: 14px;
+      min-width: 100px;
+      max-height: 30px;
+    }
   }
 }

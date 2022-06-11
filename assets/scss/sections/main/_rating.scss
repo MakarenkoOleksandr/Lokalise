@@ -1,27 +1,68 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .rating {
-  min-height: 330px;
-  padding: 90px 0 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-color: $bgcolor-main-rating;
-  &-flexbox {
+  &-container {
     display: flex;
-    justify-content: space-between;
+    gap: $gap;
+    @include xl {
+      flex-direction: column;
+    }
   }
   &-header {
-    min-width: 810px;
     display: flex;
     gap: 70px;
     align-items: center;
-  }
-  &-header__title {
-    max-width: 461px;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 50px;
+    @include xl {
+      flex-direction: column;
+    }
+
+    &__title {
+      line-height: 1.43;
+      @include xl {
+        text-align: center;
+      }
+      @include sm-min {
+        font-size: 35px;
+      }
+      @include sm {
+        font-size: 25px;
+      }
+    }
+    &__image {
+      order: -1;
+    }
   }
   &__logo {
     display: flex;
-    gap: 70px;
     align-items: center;
+    @include xl-min {
+      border-left: 1px solid $color-main;
+    }
+    @include xl {
+      border-top: 1px solid $color-main;
+      justify-content: center;
+      padding-top: $gap;
+    }
+    @include sm-min {
+      gap: 70px;
+    }
+    @include sm {
+      flex-direction: column;
+      gap: $gap;
+    }
+  }
+  &__logo-1 {
+    min-width: 150px;
+    @include xl-min {
+      padding-left: 70px;
+    }
+    @include xl {
+      padding: 0;
+    }
   }
   &__line {
     min-width: 1px;

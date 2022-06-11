@@ -10,13 +10,15 @@
 
 @use "sections/header/header-menu";
 @use "sections/header/header-content";
+
 @use "sections/main/brands";
 @use "sections/main/job";
 @use "sections/main/opportunity";
 @use "sections/main/upgrade";
-// @use "sections/main/comment";
-// @import "section-rating";
-// @import "section-usage";
-// @import "section-trial";
-// @import "footer-navbar";
-// @import "footer-rights";
+@use "sections/main/comment";
+@use "sections/main/rating";
+@use "sections/main/usage";
+@use "sections/main/trial";
+
+// @use "footer-navbar";
+// @use "footer-rights";
