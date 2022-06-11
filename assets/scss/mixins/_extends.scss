@@ -30,10 +30,6 @@
 }
 
 %job-article-description {
-    span {
-        border-bottom: solid 1px $color-main;
-        color: $color-main;
-    }
     line-height: 1.5;
     @include md-min {
         font-size: 20px;

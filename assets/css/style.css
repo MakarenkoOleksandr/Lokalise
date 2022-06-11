@@ -375,10 +375,6 @@ template {
 .job-control__description, .job-time__description, .job-quality__description, .job-work__description {
   line-height: 1.5;
 }
-.job-control__description span, .job-time__description span, .job-quality__description span, .job-work__description span {
-  border-bottom: solid 1px #000000;
-  color: #000000;
-}
 
 .job-control__link, .job-time__link, .job-quality__link, .job-work__link {
   font-weight: 600;
@@ -456,6 +452,11 @@ h2 {
   color: #000000;
   font-weight: 600;
   line-height: 1.2;
+}
+
+span {
+  border-bottom: solid 1px #000000;
+  color: #000000;
 }
 
 .container {
@@ -832,16 +833,9 @@ h2 {
 .upgrade__description {
   line-height: 1.5;
 }
-.upgrade__description a {
-  -webkit-text-decoration: underline 1px solid;
-          text-decoration: underline 1px solid;
-  color: #000000;
-}
 .upgrade__link {
   font-size: 20px;
   line-height: 30px;
-  -webkit-text-decoration: underline 1px solid;
-          text-decoration: underline 1px solid;
   color: #000000;
 }
 
@@ -1600,7 +1594,7 @@ h2 {
     row-gap: 30px;
   }
   .upgrade__header {
-    font-size: 25px;
+    font-size: 30px;
   }
   .comment__description {
     text-align: center;
