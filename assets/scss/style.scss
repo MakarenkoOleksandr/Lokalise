@@ -20,5 +20,5 @@
 @use "sections/main/usage";
 @use "sections/main/trial";
 
-// @use "footer-navbar";
-// @use "footer-rights";
+@use "sections/footer/footer-menu";
+@use "sections/footer/footer-rights";

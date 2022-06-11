@@ -41,6 +41,7 @@
     align-items: center;
     @include xl-min {
       border-left: 1px solid $color-main;
+      padding-right: 90px;
     }
     @include xl {
       border-top: 1px solid $color-main;

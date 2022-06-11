@@ -71,6 +71,57 @@
       flex-grow: 1;
       flex-basis: 10%;
       flex-shrink: 0;
+
+      &-hamburger {
+        width: 30px;
+        height: 22.5px;
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        @include lg-min {
+          display: none;
+        }
+        &-row {
+          border: none;
+          display: block;
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background: $bgcolor-btn-coloured;
+          border-radius: 3px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: 0.25s ease-in-out;
+          &:nth-child(1) {
+            top: 0px;
+          }
+          &:nth-child(2) {
+            top: 9px;
+          }
+          &:nth-child(3) {
+            top: 18px;
+          }
+        }
+        &.active span {
+          &:nth-child(1) {
+            top: 9px;
+            transform: rotate(135deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            left: -30px;
+          }
+
+          &:nth-child(3) {
+            top: 9px;
+            transform: rotate(-135deg);
+          }
+        }
+      }
     }
   }
   &-actions {
@@ -112,55 +163,6 @@
   &__item {
     @include lg {
       padding: 0.75em;
-    }
-  }
-  &-hamburger {
-    width: 30px;
-    height: 22.5px;
-    position: relative;
-    top: 0;
-    margin: 0 auto;
-    transform: rotate(0deg);
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    @include lg-min {
-      display: none;
-    }
-    &-row {
-      display: block;
-      position: absolute;
-      height: 3px;
-      width: 100%;
-      background: $bgcolor-btn-coloured;
-      border-radius: 3px;
-      opacity: 1;
-      left: 0;
-      transform: rotate(0deg);
-      transition: 0.25s ease-in-out;
-      &:nth-child(1) {
-        top: 0px;
-      }
-      &:nth-child(2) {
-        top: 9px;
-      }
-      &:nth-child(3) {
-        top: 18px;
-      }
-    }
-    &.active span {
-      &:nth-child(1) {
-        top: 9px;
-        transform: rotate(135deg);
-      }
-      &:nth-child(2) {
-        opacity: 0;
-        left: -30px;
-      }
-
-      &:nth-child(3) {
-        top: 9px;
-        transform: rotate(-135deg);
-      }
     }
   }
 }
