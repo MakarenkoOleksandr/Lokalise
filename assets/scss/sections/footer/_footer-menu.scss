@@ -46,6 +46,11 @@
     &__title {
       font-size: 40px;
     }
+    &__img {
+      @include xs {
+        width: 100%;
+      }
+    }
     &__description {
       font-size: 20px;
       line-height: 1.5;
