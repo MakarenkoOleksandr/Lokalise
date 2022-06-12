@@ -4,33 +4,37 @@
 .header-content {
   display: flex;
   align-items: center;
+
   padding-top: 80px;
   padding-bottom: 80px;
+
   @include lg-min {
     flex-direction: row;
   }
   @include lg {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
     row-gap: $gap;
   }
   &-container {
-    flex-grow: 1;
-    flex-basis: 200px;
     display: flex;
+    flex-basis: 200px;
     flex-direction: column;
+    flex-grow: 1;
+
     gap: 50px;
     @include lg {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
     }
   }
   &__image {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-basis: 200px;
     align-items: baseline;
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: center;
   }
   &__img {
     @include lg-min {
@@ -43,6 +47,7 @@
   &__title {
     font-weight: 600;
     line-height: 1.08;
+
     @include xl-min {
       font-size: 65px;
     }
@@ -51,16 +56,20 @@
     }
     @include lg-sm {
       text-align: center;
+
       font-size: 45px;
     }
     @include sm {
       text-align: center;
+
       font-size: 40px;
     }
   }
   &__description {
-    line-height: 1.4;
     padding-right: 160px;
+
+    line-height: 1.4;
+
     @include xl-min {
       font-size: 25px;
     }
@@ -68,23 +77,29 @@
       font-size: 25px;
     }
     @include lg-sm {
-      text-align: center;
       padding: 0;
+
+      text-align: center;
+
       font-size: 20px;
     }
     @include sm {
-      text-align: center;
       padding: 0;
+
+      text-align: center;
+
       font-size: 20px;
     }
   }
   &__actions {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
-    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+
     margin-bottom: -25px;
+
+    gap: 10px;
   }
   &__trial {
     @include ul-min {
@@ -92,14 +107,16 @@
       min-height: 60px;
     }
     @include ul-sm {
-      font-size: 14px;
       min-width: 130px;
       max-height: 35px;
+
+      font-size: 14px;
     }
     @include sm {
-      font-size: 14px;
       min-width: 100px;
       max-height: 25px;
+
+      font-size: 14px;
     }
   }
   &__demo {
@@ -108,14 +125,16 @@
       min-height: 60px;
     }
     @include ul-sm {
-      font-size: 14px;
       min-width: 130px;
       max-height: 35px;
+
+      font-size: 14px;
     }
     @include sm {
-      font-size: 14px;
       min-width: 100px;
       max-height: 25px;
+
+      font-size: 14px;
     }
   }
   &__free {

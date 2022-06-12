@@ -4,9 +4,11 @@
 .rating {
   padding-top: 90px;
   padding-bottom: 90px;
+
   background-color: $bgcolor-main-rating;
   &-container {
     display: flex;
+
     gap: $gap;
     @include xl {
       flex-direction: column;
@@ -14,14 +16,16 @@
   }
   &-header {
     display: flex;
-    gap: 70px;
     align-items: center;
+
+    gap: 70px;
     @include xl {
       flex-direction: column;
     }
 
     &__title {
       line-height: 1.43;
+
       @include xl {
         text-align: center;
       }
@@ -39,25 +43,31 @@
   &__logo {
     display: flex;
     align-items: center;
+
     @include xl-min {
-      border-left: 1px solid $color-main;
       padding-right: 90px;
+
+      border-left: 1px solid $color-main;
     }
     @include xl {
-      border-top: 1px solid $color-main;
       justify-content: center;
+
       padding-top: $gap;
+
+      border-top: 1px solid $color-main;
     }
     @include sm-min {
       gap: 70px;
     }
     @include sm {
       flex-direction: column;
+
       gap: $gap;
     }
   }
   &__logo-1 {
     min-width: 150px;
+
     @include xl-min {
       padding-left: 70px;
     }
@@ -68,6 +78,7 @@
   &__line {
     min-width: 1px;
     min-height: 170px;
+
     background-color: $color-main;
   }
 }

@@ -2,62 +2,65 @@
 @use "mixins" as *;
 
 %job-article {
-    display: flex;
-    align-items: center;
-    @include xl-min {
-        column-gap: 140px;
-    }
-    @include xl {
-        column-gap: $gap;
-    }
-    @include sm {
-        row-gap: $gap-lg;
-    }
+  display: flex;
+  align-items: center;
+
+  @include xl-min {
+    column-gap: $gap;
+  }
+  @include xl-lg {
+    column-gap: $gap;
+  }
+  @include lg {
+    row-gap: $gap;
+  }
 }
 
 %job-article-content {
-    flex-grow: 1;
-    flex-basis: 150px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  display: flex;
+  flex-basis: 150px;
+  flex-direction: column;
+  flex-grow: 1;
+
+  row-gap: 30px;
 }
 
 %job-article-title {
-    @include sm {
-        text-align: center;
-    }
+  @include lg {
+    text-align: center;
+  }
 }
 
 %job-article-description {
-    line-height: 1.5;
-    @include md-min {
-        font-size: 20px;
-    }
-    @include sm {
-        text-align: center;
-    }
+  line-height: 1.5;
+
+  @include md-min {
+    font-size: 20px;
+  }
+  @include lg {
+    text-align: center;
+  }
 }
 %job-article-action {
-    @include sm {
-        text-align: center;
-    }
+  @include lg {
+    text-align: center;
+  }
 }
 
 %job-article-link {
-    font-weight: 600;
-    font-size: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 %job-article-picture {
-    flex-grow: 1;
-    flex-basis: 150px;
-    display: flex;
+  display: flex;
+  flex-basis: 150px;
+  flex-grow: 1;
 }
 %job-article-image {
-    @include sm-min {
-        width: 100%;
-    }
-    @include sm {
-        width: 75%;
-    }
+  @include sm-min {
+    width: 100%;
+  }
+  @include sm {
+    width: 75%;
+  }
 }

@@ -3,6 +3,7 @@
 
 .trial {
   background-color: $bgcolor-main-trial;
+
   @include xl-min {
     padding-top: 120px;
     padding-bottom: 160px;
@@ -13,16 +14,20 @@
   }
   &-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
     gap: $gap-md;
   }
   &__title {
-    line-height: 1.15;
     text-align: center;
+
+    line-height: 1.15;
+
     @include xl-min {
-      padding-left: 250px;
       padding-right: 250px;
+      padding-left: 250px;
+
       font-size: 65px;
     }
     @include xl-lg {
@@ -36,9 +41,11 @@
     }
   }
   &__description {
+    text-align: center;
+
     font-size: 20px;
     line-height: 1.5;
-    text-align: center;
+
     @include md-min {
       padding-bottom: 25px;
     }
@@ -49,14 +56,16 @@
       min-height: 60px;
     }
     @include lg-md {
-      font-size: 14px;
       min-width: 130px;
       max-height: 35px;
+
+      font-size: 14px;
     }
     @include md {
-      font-size: 14px;
       min-width: 100px;
       max-height: 25px;
+
+      font-size: 14px;
     }
   }
 }

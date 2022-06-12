@@ -12,16 +12,19 @@
     margin-bottom: 80px;
   }
   &__header {
-    text-align: center;
     margin-bottom: 75px;
+
+    text-align: center;
+
     @include sm {
       font-size: 30px;
     }
   }
   &__list {
     display: grid;
-    gap: $gap-md;
     align-items: baseline;
+
+    gap: $gap-md;
     @include lg-min {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -31,25 +34,30 @@
     }
   }
   &__item {
-    max-width: 410px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    max-width: 410px;
+
     @include lg-min {
       gap: $gap-md;
     }
     @include lg {
-      gap: $gap-sm;
       align-items: center;
+
+      gap: $gap-sm;
     }
   }
   &__picture {
     order: -1;
+
     margin-bottom: 15px;
   }
   &__title {
     font-weight: 600;
     line-height: 40px;
+
     @include lg-min {
       font-size: 30px;
     }
@@ -59,6 +67,7 @@
   }
   &__description {
     line-height: 1.5;
+
     @include lg-min {
       font-size: 20px;
     }
@@ -67,8 +76,9 @@
     }
   }
   &__link {
+    color: $color-main;
+
     font-size: 20px;
     line-height: 30px;
-    color: $color-main;
   }
 }

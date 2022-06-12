@@ -3,28 +3,29 @@
 
 .job {
   padding-top: 90px;
+
   @include sm-min {
     padding-bottom: 150px;
   }
-  @include sm {
+  @include lg {
     padding-bottom: 90px;
   }
 }
 
 .job-control {
-  @include sm-min {
+  @extend %job-article;
+  @include lg-min {
     padding-bottom: 250px;
   }
-  @include sm {
+  @include lg {
     padding-bottom: $gap-lg;
   }
-  @extend %job-article;
-  @include sm {
+  @include lg {
     flex-direction: column;
   }
   &-content {
     @extend %job-article-content;
-    @include lg-min {
+    @include xl-min {
       padding-right: 170px;
     }
   }
@@ -57,23 +58,23 @@
 }
 
 .job-time {
-  @include sm-min {
+  @extend %job-article;
+  @include lg-min {
     padding-bottom: 250px;
   }
-  @include sm {
+  @include lg {
     padding-bottom: $gap-lg;
   }
-  @extend %job-article;
-  @include sm-min {
+  @include lg-min {
     flex-direction: row-reverse;
   }
-  @include sm {
+  @include lg {
     flex-direction: column;
   }
   &-content {
     @extend %job-article-content;
-    @include lg-min {
-      padding-right: 190px;
+    @include xl-min {
+      padding-left: 140px;
     }
   }
   &__title {
@@ -90,10 +91,10 @@
   }
   &__picture {
     @extend %job-article-picture;
-    @include sm-min {
+    @include lg-min {
       justify-content: start;
     }
-    @include sm {
+    @include lg {
       justify-content: center;
     }
   }
@@ -103,19 +104,19 @@
 }
 
 .job-quality {
-  @include sm-min {
+  @extend %job-article;
+  @include lg-min {
     padding-bottom: 250px;
   }
-  @include sm {
+  @include lg {
     padding-bottom: $gap-lg;
   }
-  @extend %job-article;
-  @include sm {
+  @include lg {
     flex-direction: column;
   }
   &-content {
     @extend %job-article-content;
-    @include lg-min {
+    @include xl-min {
       padding-right: 170px;
     }
   }
@@ -147,14 +148,17 @@
 
 .job-work {
   @extend %job-article;
-  @include sm-min {
+  @include lg-min {
     flex-direction: row-reverse;
   }
-  @include sm {
+  @include lg {
     flex-direction: column;
   }
   &-content {
     @extend %job-article-content;
+    @include xl-min {
+      padding-left: 140px;
+    }
   }
   &__title {
     @extend %job-article-title;

@@ -12,16 +12,20 @@
   }
   &-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   &__title {
-    line-height: 1.15;
-    text-align: center;
     padding-bottom: $gap;
+
+    text-align: center;
+
+    line-height: 1.15;
+
     @include xl-min {
-      padding-left: 250px;
       padding-right: 250px;
+      padding-left: 250px;
+
       font-size: 65px;
     }
     @include xl-lg {
@@ -35,11 +39,13 @@
     }
   }
   &__description {
-    line-height: 1.2;
     text-align: center;
+
+    line-height: 1.2;
+
     @include xl-min {
-      padding-left: 400px;
       padding-right: 400px;
+      padding-left: 400px;
     }
     @include lg-min {
       font-size: 25px;
@@ -49,8 +55,8 @@
     }
   }
   &__image {
-    padding: 25px 0 25px;
     width: 100%;
+    padding: 25px 0 25px;
   }
   &__button {
     @include lg-min {
@@ -58,14 +64,16 @@
       min-height: 60px;
     }
     @include lg-sm {
-      font-size: 14px;
       min-width: 150px;
       max-height: 35px;
+
+      font-size: 14px;
     }
     @include sm {
-      font-size: 14px;
       min-width: 100px;
       max-height: 25px;
+
+      font-size: 14px;
     }
   }
 }

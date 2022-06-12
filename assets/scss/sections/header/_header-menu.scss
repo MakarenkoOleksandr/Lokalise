@@ -2,35 +2,44 @@
 @use "../../mixins" as *;
 
 .header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  min-height: 100vh;
   &-menu {
     position: relative;
+
     min-height: 95px;
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 100vw;
-      height: 1px;
-      margin-left: -50vw;
-      content: "";
-      background-color: #cccccc;
-    }
+
     @include md-min {
       display: flex;
-      gap: 50px;
       align-items: center;
+
+      gap: 50px;
     }
     @include md {
+      display: grid;
+
       padding-top: $gap;
       padding-bottom: $gap;
-      display: grid;
+
       grid-template-areas: "logo" "acn" "nav";
       grid-template-rows: 1fr 1fr 1fr;
       justify-items: center;
       row-gap: $gap;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 100vw;
+      height: 1px;
+      margin-left: -50vw;
+
+      content: "";
+
+      background-color: #cccccc;
     }
     &-submit {
       @include ul-min {
@@ -38,9 +47,10 @@
         max-height: 45px;
       }
       @include ul {
-        font-size: 14px;
         min-width: 100px;
         max-height: 25px;
+
+        font-size: 14px;
       }
     }
     &-trial {
@@ -49,55 +59,65 @@
         max-height: 45px;
       }
       @include ul {
-        font-size: 14px;
         min-width: 100px;
         max-height: 25px;
+
+        font-size: 14px;
       }
     }
   }
   &-logo {
-    grid-area: logo;
     align-self: center;
+
+    grid-area: logo;
     @include lg {
-      flex-grow: 1;
       flex-basis: 10%;
+      flex-grow: 1;
       flex-shrink: 1;
     }
   }
   &-navbar {
-    grid-area: nav;
     flex-grow: 1;
+
+    grid-area: nav;
     @include lg {
-      flex-grow: 1;
       flex-basis: 10%;
+      flex-grow: 1;
       flex-shrink: 0;
 
       &-hamburger {
-        width: 30px;
-        height: 22.5px;
         position: relative;
         top: 0;
+
+        width: 30px;
+        height: 22.5px;
         margin: 0 auto;
-        transform: rotate(0deg);
-        transition: 0.5s ease-in-out;
+
         cursor: pointer;
+        transition: 0.5s ease-in-out;
+        transform: rotate(0deg);
+
         @include lg-min {
           display: none;
         }
         &-row {
-          border: none;
-          display: block;
           position: absolute;
-          height: 3px;
-          width: 100%;
-          background: $bgcolor-btn-coloured;
-          border-radius: 3px;
-          opacity: 1;
           left: 0;
-          transform: rotate(0deg);
+
+          display: block;
+
+          width: 100%;
+          height: 3px;
+
           transition: 0.25s ease-in-out;
+          transform: rotate(0deg);
+
+          opacity: 1;
+          border: none;
+          border-radius: 3px;
+          background: $bgcolor-btn-coloured;
           &:nth-child(1) {
-            top: 0px;
+            top: 0;
           }
           &:nth-child(2) {
             top: 9px;
@@ -109,15 +129,18 @@
         &.active span {
           &:nth-child(1) {
             top: 9px;
+
             transform: rotate(135deg);
           }
           &:nth-child(2) {
-            opacity: 0;
             left: -30px;
+
+            opacity: 0;
           }
 
           &:nth-child(3) {
             top: 9px;
+
             transform: rotate(-135deg);
           }
         }
@@ -125,13 +148,14 @@
     }
   }
   &-actions {
-    grid-area: acn;
     display: flex;
-    gap: 10px;
     justify-content: flex-end;
+
+    gap: 10px;
+    grid-area: acn;
     @include lg {
-      flex-grow: 1;
       flex-basis: 10%;
+      flex-grow: 1;
       flex-shrink: 0;
     }
   }
@@ -139,8 +163,9 @@
 .navbar {
   &__list {
     display: flex;
-    flex-grow: 1;
     align-items: center;
+    flex-grow: 1;
+
     @include ul-min {
       column-gap: 50px;
     }
@@ -148,14 +173,18 @@
       column-gap: 30px;
     }
     @include lg {
-      display: none;
       position: absolute;
       top: 101%;
       right: -$gap;
       left: -$gap;
-      text-align: center;
+
+      display: none;
+
       padding-top: $gap-sm;
       padding-bottom: $gap-sm;
+
+      text-align: center;
+
       background-color: rgba($bgcolor-main, 0.98);
       box-shadow: 0 5px 5px rgba($color-main, 0.25);
     }

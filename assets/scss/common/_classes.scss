@@ -3,49 +3,61 @@
 .container {
   max-width: $ul;
   margin: 0 auto;
-  padding-left: $gap;
   padding-right: $gap;
+  padding-left: $gap;
 }
 
 .btn-light {
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 1em 1em;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $border-color-btn-light;
-  color: $color-btn-light;
-  background-color: $bgcolor-btn-light;
+
   cursor: pointer;
-  font-weight: 600;
+
+  color: $color-btn-light;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $border-color-btn-light;
+  background-color: $bgcolor-btn-light;
+
   font-size: 16px;
+  font-weight: 600;
 }
 .btn-coloured {
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 1em 1em;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $border-color-btn-coloured;
-  color: $color-btn-coloured;
-  background-color: $bgcolor-btn-coloured;
+
   cursor: pointer;
-  font-weight: 600;
+
+  color: $color-btn-coloured;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $border-color-btn-coloured;
+  background-color: $bgcolor-btn-coloured;
+
   font-size: 16px;
+  font-weight: 600;
 }
 .btn-black {
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 1em 1em;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $border-color-btn-black;
-  color: $color-btn-black;
-  background-color: $bgcolor-btn-black;
+
   cursor: pointer;
-  font-weight: 600;
+
+  color: $color-btn-black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $border-color-btn-black;
+  background-color: $bgcolor-btn-black;
+
   font-size: 16px;
+  font-weight: 600;
 }
