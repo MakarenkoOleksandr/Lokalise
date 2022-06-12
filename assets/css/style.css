@@ -1011,26 +1011,8 @@ span {
   max-width: 300px;
 }
 @media (min-width: 576px) {
-  .job-control__image, .job-time__image, .job-quality__image, .job-work__image {
-    width: 100%;
-  }
   .job {
     padding-bottom: 150px;
-  }
-  .job-control__picture {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  .job-quality__picture {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  .job-work__picture {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   .rating-header__title {
     font-size: 35px;
@@ -1078,6 +1060,9 @@ span {
   }
 }
 @media (min-width: 992px) {
+  .job-control__image, .job-time__image, .job-quality__image, .job-work__image {
+    width: 100%;
+  }
   .header-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1093,6 +1078,11 @@ span {
   }
   .job-control {
     padding-bottom: 250px;
+  }
+  .job-control__picture {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .job-time {
     padding-bottom: 250px;
@@ -1111,11 +1101,21 @@ span {
   .job-quality {
     padding-bottom: 250px;
   }
+  .job-quality__picture {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
   .job-work {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+  .job-work__picture {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .opportunity__header {
     margin-bottom: 80px;
@@ -1558,11 +1558,6 @@ span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .job-time__picture {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .job-quality {
     padding-bottom: 40px;
   }
@@ -1632,6 +1627,14 @@ span {
   }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
+  .job-control__picture, .job-time__picture, .job-quality__picture, .job-work__picture {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .job-control__image, .job-time__image, .job-quality__image, .job-work__image {
+    width: 75%;
+  }
   .header-content__title {
     text-align: center;
     font-size: 45px;
@@ -1690,6 +1693,11 @@ span {
   }
 }
 @media (max-width: 575.8px) {
+  .job-control__picture, .job-time__picture, .job-quality__picture, .job-work__picture {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .job-control__image, .job-time__image, .job-quality__image, .job-work__image {
     width: 75%;
   }
@@ -1725,21 +1733,6 @@ span {
             flex-direction: column;
     justify-items: center;
     row-gap: 30px;
-  }
-  .job-control__picture {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .job-quality__picture {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .job-work__picture {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .opportunity__list {
     grid-template-columns: 1fr;

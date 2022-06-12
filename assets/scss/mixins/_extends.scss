@@ -55,10 +55,20 @@
   display: flex;
   flex-basis: 150px;
   flex-grow: 1;
+
+  @include lg-sm {
+    justify-content: center;
+  }
+  @include sm {
+    justify-content: center;
+  }
 }
 %job-article-image {
-  @include sm-min {
+  @include lg-min {
     width: 100%;
+  }
+  @include lg-sm {
+    width: 75%;
   }
   @include sm {
     width: 75%;
