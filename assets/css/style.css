@@ -1118,7 +1118,7 @@ span {
   .job-control__image, .job-time__image, .job-quality__image, .job-work__image {
     width: 100%;
   }
-  .header-navbar-hamburger {
+  .header-navbar__hamburger {
     display: none;
   }
   .header-content {
