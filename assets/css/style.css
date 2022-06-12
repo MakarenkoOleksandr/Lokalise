@@ -563,7 +563,7 @@ span {
           flex-grow: 1;
   grid-area: nav;
 }
-.header-navbar-hamburger {
+.header-navbar__hamburger {
   position: relative;
   top: 0;
   width: 30px;
@@ -577,7 +577,7 @@ span {
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
 }
-.header-navbar-hamburger-row {
+.header-navbar__hamburger-row {
   position: absolute;
   left: 0;
   display: block;
@@ -594,26 +594,26 @@ span {
   border-radius: 3px;
   background: #ff6336;
 }
-.header-navbar-hamburger-row:nth-child(1) {
+.header-navbar__hamburger-row:nth-child(1) {
   top: 0;
 }
-.header-navbar-hamburger-row:nth-child(2) {
+.header-navbar__hamburger-row:nth-child(2) {
   top: 9px;
 }
-.header-navbar-hamburger-row:nth-child(3) {
+.header-navbar__hamburger-row:nth-child(3) {
   top: 18px;
 }
-.header-navbar-hamburger.active span:nth-child(1) {
+.header-navbar__hamburger.active span:nth-child(1) {
   top: 9px;
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.header-navbar-hamburger.active span:nth-child(2) {
+.header-navbar__hamburger.active span:nth-child(2) {
   left: -30px;
   opacity: 0;
 }
-.header-navbar-hamburger.active span:nth-child(3) {
+.header-navbar__hamburger.active span:nth-child(3) {
   top: 9px;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
